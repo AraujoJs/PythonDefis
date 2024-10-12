@@ -8,7 +8,6 @@ import logging, utils
 from cgi import print_environ_usage
 
 import main as m
-from Main.RpgLordOfRings.utils import show_tag
 
 # Configurations globales
 logging.getLogger().setLevel(logging.DEBUG)
@@ -17,7 +16,7 @@ logging.getLogger().setLevel(logging.DEBUG)
 # Fonctions
 def show_menu_principal(menu: str = "P"):
     if menu == "P":
-        show_tag()
+        utils.show_tag()
         print("""
 ----- JDR Seigneur des anneaux -----
 Un petit project créé par Jojo. Mon
@@ -86,7 +85,7 @@ Inspiration:
 Merci d'avoir joué a mon jeu! J'éspère que ça vous a plu! ;)
     """
         )
-        show_tag()
+        utils.show_tag()
         go_to_main_menu()
 
 def go_to_main_menu():
