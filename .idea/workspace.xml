@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ab006f6-0646-48aa-a3c3-5ec2bce5c153" name="Changes" comment="Finir game du pendu.">
-      <change afterPath="$PROJECT_DIR$/.idea/DefisDiscord.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/JeuDuPendu/AutresSolutions/Maxdo/liste_francais.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/JeuDuPendu/AutresSolutions/Maxdo/pendu_0opti_mauvais_fichier_de_mot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/JeuDuPendu/pendu_game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/RpgLordOfRings/game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/RpgLordOfRings/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/RpgLordOfRings/menu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/RpgLordOfRings/saves.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/RpgLordOfRings/utils.py" afterDir="false" />
-    </list>
+    <list default="true" id="5ab006f6-0646-48aa-a3c3-5ec2bce5c153" name="Changes" comment="correction de bugs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +20,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "AraujoJs"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/AraujoJs/PythonDefis.git",
+    "accountId": "85ad4604-8353-4039-97c8-d5c2bae53f9f"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -44,30 +41,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.SPOILER_message.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pendu_0opti_mauvais_fichier_de_mot.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pendu_game.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jojo/PycharmProjects/DefisDiscord&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.inline.completion&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.SPOILER_message.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.pendu_0opti_mauvais_fichier_de_mot.executor": "Run",
+    "Python.pendu_game.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/jojo/PycharmProjects/DefisDiscord",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.inline.completion",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Main/AutresSolutions/Maxdo" />
       <recent name="$PROJECT_DIR$/Main/AutresSolutions" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.SPOILER_message">
+  <component name="RunManager" selected="Python.main">
     <configuration name="SPOILER_message" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PenduGame" />
       <option name="ENV_FILES" value="" />
@@ -83,6 +81,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/SPOILER_message.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PenduGame" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main/RpgLordOfRings" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main/RpgLordOfRings/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,6 +160,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.SPOILER_message" />
         <item itemvalue="Python.pendu_game" />
         <item itemvalue="Python.pendu_0opti_mauvais_fichier_de_mot" />
@@ -167,7 +189,73 @@
       <workItem from="1728725888477" duration="11000" />
       <workItem from="1728742551196" duration="14000" />
       <workItem from="1728742601279" duration="122000" />
+      <workItem from="1728742866853" duration="1206000" />
     </task>
+    <task id="LOCAL-00001" summary="Création du jeu du pendu.">
+      <option name="closed" value="true" />
+      <created>1728743203470</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728743203470</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Création du RPG Seigneur Des Anneaux. Ajout du fichier main.py et création des fonctions de base pour création d'une partie.">
+      <option name="closed" value="true" />
+      <created>1728743575793</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728743575793</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Creation du menu du jeu">
+      <option name="closed" value="true" />
+      <created>1728743594640</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728743594640</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Ajout du fichier game.py pour la logique du jeu.">
+      <option name="closed" value="true" />
+      <created>1728743610137</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728743610137</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Ajout du fichier saves.py pour la logique d'enregistrement de game.">
+      <option name="closed" value="true" />
+      <created>1728743625390</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728743625390</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Ajout du fichier utils.py pour les codes utiles dans l'ensemble du programme.">
+      <option name="closed" value="true" />
+      <created>1728743645109</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728743645109</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Ajout des fichiers">
+      <option name="closed" value="true" />
+      <created>1728743691574</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728743691574</updated>
+    </task>
+    <task id="LOCAL-00008" summary="correction de bugs">
+      <option name="closed" value="true" />
+      <created>1728743935969</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728743935969</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,12 +263,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finir game du pendu." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finir game du pendu." />
+    <MESSAGE value="Création du jeu du pendu." />
+    <MESSAGE value="Création du RPG Seigneur Des Anneaux. Ajout du fichier main.py et création des fonctions de base pour création d'une partie." />
+    <MESSAGE value="Creation du menu du jeu" />
+    <MESSAGE value="Ajout du fichier game.py pour la logique du jeu." />
+    <MESSAGE value="Ajout du fichier saves.py pour la logique d'enregistrement de game." />
+    <MESSAGE value="Ajout du fichier utils.py pour les codes utiles dans l'ensemble du programme." />
+    <MESSAGE value="Ajout des fichiers" />
+    <MESSAGE value="correction de bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction de bugs" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PenduGame$pendu_0opti_mauvais_fichier_de_mot.coverage" NAME="pendu_0opti_mauvais_fichier_de_mot Coverage Results" MODIFIED="1728724965384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main/AutresSolutions" />
     <SUITE FILE_PATH="coverage/PenduGame$pendu_game.coverage" NAME="pendu_game Coverage Results" MODIFIED="1728725049702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main" />
     <SUITE FILE_PATH="coverage/PenduGame$SPOILER_message.coverage" NAME="SPOILER_message Coverage Results" MODIFIED="1728725488633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
     <SUITE FILE_PATH="coverage/DefisDiscord$SPOILER_message.coverage" NAME="SPOILER_message Coverage Results" MODIFIED="1728742619518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
+    <SUITE FILE_PATH="coverage/DefisDiscord$main.coverage" NAME="main Coverage Results" MODIFIED="1728743915152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main/RpgLordOfRings" />
   </component>
 </project>
