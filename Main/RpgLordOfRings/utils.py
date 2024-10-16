@@ -16,11 +16,11 @@ logging.getLogger().setLevel(logging.DEBUG)
 # Fonctions
 def show_tag():
     init(strip=not sys.stdout.isatty())  # strip colors if stdout is redirected
-    cprint(figlet_format('Jojo', font='starwars'))
+    cprint(figlet_format('jojo & Nico', font='starwars'))
 
 def taper_text(text: str, load: bool = False):
     if load:
-        print("carregando...", end="", flush=True)
+        print("chargement...", end="", flush=True)
         sleep(2)
         print("\r", end="", flush=True)
     for letter in text:

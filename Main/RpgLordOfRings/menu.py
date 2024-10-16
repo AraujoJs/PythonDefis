@@ -5,11 +5,9 @@ Création: jojo, le 12/10/2024
 """
 # Imports
 import logging, utils
-from cgi import print_environ_usage
-
 import main as m
 
-# Configurations globales
+# Configurations globales§
 logging.getLogger().setLevel(logging.DEBUG)
 
 
