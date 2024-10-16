@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ab006f6-0646-48aa-a3c3-5ec2bce5c153" name="Changes" comment="correction de bugs">
-      <change beforePath="$PROJECT_DIR$/.idea/PenduGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PenduGame.iml" afterDir="false" />
+    <list default="true" id="5ab006f6-0646-48aa-a3c3-5ec2bce5c153" name="Changes" comment="mise à jour projet et carregando en français maintenant">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/RpgLordOfRings/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/RpgLordOfRings/menu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main/RpgLordOfRings/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/RpgLordOfRings/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +22,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -233,7 +232,7 @@
       <workItem from="1728902645523" duration="1334000" />
       <workItem from="1729074521285" duration="51000" />
       <workItem from="1729104149702" duration="724000" />
-      <workItem from="1729104893352" duration="1684000" />
+      <workItem from="1729104893352" duration="3447000" />
     </task>
     <task id="LOCAL-00001" summary="Création du jeu du pendu.">
       <option name="closed" value="true" />
@@ -315,7 +314,31 @@
       <option name="project" value="LOCAL" />
       <updated>1728747902272</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="mise à jour projet et carregando en français maintenant">
+      <option name="closed" value="true" />
+      <created>1729107366275</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1729107366275</updated>
+    </task>
+    <task id="LOCAL-00012" summary="mise à jour projet et carregando en français maintenant">
+      <option name="closed" value="true" />
+      <created>1729108119222</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1729108119222</updated>
+    </task>
+    <task id="LOCAL-00013" summary="mise à jour projet et carregando en français maintenant">
+      <option name="closed" value="true" />
+      <created>1729108245551</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1729108245551</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +354,8 @@
     <MESSAGE value="Ajout du fichier utils.py pour les codes utiles dans l'ensemble du programme." />
     <MESSAGE value="Ajout des fichiers" />
     <MESSAGE value="correction de bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="correction de bugs" />
+    <MESSAGE value="mise à jour projet et carregando en français maintenant" />
+    <option name="LAST_COMMIT_MESSAGE" value="mise à jour projet et carregando en français maintenant" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PenduGame$pendu_0opti_mauvais_fichier_de_mot.coverage" NAME="pendu_0opti_mauvais_fichier_de_mot Coverage Results" MODIFIED="1728724965384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main/AutresSolutions" />

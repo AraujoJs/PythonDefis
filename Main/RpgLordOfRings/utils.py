@@ -20,7 +20,7 @@ def show_tag():
 
 def taper_text(text: str, load: bool = False):
     if load:
-        print("chargement...", end="", flush=True)
+        print("carregando...", end="", flush=True)
         sleep(2)
         print("\r", end="", flush=True)
     for letter in text:
