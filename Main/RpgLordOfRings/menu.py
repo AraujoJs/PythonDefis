@@ -5,13 +5,75 @@ Création: jojo, le 12/10/2024
 """
 # Imports
 import logging, utils
+from os import PRIO_PGRP
+
 import main as m
+from Main.RpgLordOfRings.utils import taper_text
 
 # Configurations globales§
 logging.getLogger().setLevel(logging.DEBUG)
 
 
 # Fonctions
+
+# Création du personnage
+
+def show_create_personnage():
+    print("""
+=====================================
+\t\tCRÉATION DU PERSONNAGE
+=====================================
+""")
+
+def get_menu_create_choice():
+    races = {1: "Humain", 2: "Elfe", 3: "Nain", 4: "Hobbit"}
+    classes = {1: "Guerrier", 2: "Mage", 3: "Archer", 4: "Clerc", 5: "Bard"}
+    points_balance = 20
+
+    utils.taper_text("Entrez le nom de votre personnage: ")
+    name = str(input())
+    utils.taper_text("Choisissez votre race : ")
+    print("""\n
+    1. Humain
+    2. Elfe
+    3. Nain
+    4. Hobbit
+""")
+    utils.taper_text("Choisissez :")
+    c_race = int(input())
+
+    utils.taper_text("Choisissez votre classe : ")
+    print("""\n
+    1. Guerrier
+    2. Mage
+    3. Archer
+    4. Clerc
+    5. Bard
+    """)
+    taper_text("Choisissez :")
+    choice = 0
+    while choice not in [1, 2, 3, 4, 5]:
+        choice = int(input())
+    c_classe = classes[choice]
+
+    print()
+    taper_text("Distribuez 20 points entre les attributs suivants :")
+    print()
+    taper_text("Force (par défaut 5) :")
+    c_force = int(input())
+    print()
+    taper_text("Agilité (par défault 5) :")
+    c_agilitee = int(input())
+    print()
+    taper_text("Intelligence (par défault 5 :")
+    taper_text("Défense (par défault 5 :")
+    c_defense = int(input())
+
+    taper_text("votre personnage est prêt!", load=True)
+
+    return [c_classe, c_force, c_agilitee, c_defense]
+
+
 def show_menu_principal(menu: str = "P"):
     if menu == "P":
         utils.show_tag()

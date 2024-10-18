@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5ab006f6-0646-48aa-a3c3-5ec2bce5c153" name="Changes" comment="mise à jour projet et carregando en français maintenant">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/RpgLordOfRings/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/RpgLordOfRings/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main/RpgLordOfRings/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/RpgLordOfRings/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main/RpgLordOfRings/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/RpgLordOfRings/menu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +23,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -232,7 +232,9 @@
       <workItem from="1728902645523" duration="1334000" />
       <workItem from="1729074521285" duration="51000" />
       <workItem from="1729104149702" duration="724000" />
-      <workItem from="1729104893352" duration="3447000" />
+      <workItem from="1729104893352" duration="4307000" />
+      <workItem from="1729176569759" duration="4284000" />
+      <workItem from="1729262320993" duration="705000" />
     </task>
     <task id="LOCAL-00001" summary="Création du jeu du pendu.">
       <option name="closed" value="true" />
@@ -338,7 +340,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729108245551</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="mise à jour projet et carregando en français maintenant">
+      <option name="closed" value="true" />
+      <created>1729108595792</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1729108595792</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,6 +367,17 @@
     <MESSAGE value="mise à jour projet et carregando en français maintenant" />
     <option name="LAST_COMMIT_MESSAGE" value="mise à jour projet et carregando en français maintenant" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Main/RpgLordOfRings/main.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PenduGame$pendu_0opti_mauvais_fichier_de_mot.coverage" NAME="pendu_0opti_mauvais_fichier_de_mot Coverage Results" MODIFIED="1728724965384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main/AutresSolutions" />
     <SUITE FILE_PATH="coverage/PenduGame$pendu_game.coverage" NAME="pendu_game Coverage Results" MODIFIED="1728725049702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main" />
@@ -364,6 +385,6 @@
     <SUITE FILE_PATH="coverage/DefisDiscord$pendu_game__1_.coverage" NAME="pendu_game (1) Coverage Results" MODIFIED="1728904987484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main/JeuDuPendu" />
     <SUITE FILE_PATH="coverage/PenduGame$SPOILER_message.coverage" NAME="SPOILER_message Coverage Results" MODIFIED="1728725488633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
     <SUITE FILE_PATH="coverage/DefisDiscord$SPOILER_message.coverage" NAME="SPOILER_message Coverage Results" MODIFIED="1728742619518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
-    <SUITE FILE_PATH="coverage/DefisDiscord$main.coverage" NAME="main Coverage Results" MODIFIED="1729106129126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main/RpgLordOfRings" />
+    <SUITE FILE_PATH="coverage/DefisDiscord$main.coverage" NAME="main Coverage Results" MODIFIED="1729262352910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main/RpgLordOfRings" />
   </component>
 </project>
