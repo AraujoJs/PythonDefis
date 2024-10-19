@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ab006f6-0646-48aa-a3c3-5ec2bce5c153" name="Changes" comment="mise à jour projet et carregando en français maintenant">
+    <list default="true" id="5ab006f6-0646-48aa-a3c3-5ec2bce5c153" name="Changes" comment="Ajout du menu de création de personnage. Ajout des fonctions qui vérifient et valident les choix du joueur. Validation des points (si les point ont bien été distribués). Ajout des fonctions qui affichent plus d'information pour chaque attribut.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main/RpgLordOfRings/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/RpgLordOfRings/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main/RpgLordOfRings/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/RpgLordOfRings/menu.py" afterDir="false" />
@@ -52,6 +52,9 @@
     &quot;accountId&quot;: &quot;85ad4604-8353-4039-97c8-d5c2bae53f9f&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -61,26 +64,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.SPOILER_message.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.menu.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pendu_0opti_mauvais_fichier_de_mot.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pendu_game (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.pendu_game.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jojo/PycharmProjects/DefisDiscord&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.SPOILER_message.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.menu.executor": "Run",
+    "Python.pendu_0opti_mauvais_fichier_de_mot.executor": "Run",
+    "Python.pendu_game (1).executor": "Run",
+    "Python.pendu_game.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/jojo/PycharmProjects/DefisDiscord",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Main/AutresSolutions/Maxdo" />
@@ -234,7 +238,7 @@
       <workItem from="1729104149702" duration="724000" />
       <workItem from="1729104893352" duration="4307000" />
       <workItem from="1729176569759" duration="4284000" />
-      <workItem from="1729262320993" duration="705000" />
+      <workItem from="1729262320993" duration="16899000" />
     </task>
     <task id="LOCAL-00001" summary="Création du jeu du pendu.">
       <option name="closed" value="true" />
@@ -348,7 +352,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729108595792</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Ajout du menu de création de personage">
+      <option name="closed" value="true" />
+      <created>1729263393578</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1729263393578</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Ajout du menu de création de personnage. Ajout des fonctions qui vérifient et valident les choix du joueur. Validation des points (si les point ont bien été distribués). Ajout des fonctions qui affichent plus d'information pour chaque attribut.">
+      <option name="closed" value="true" />
+      <created>1729340482700</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1729340482700</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,18 +385,9 @@
     <MESSAGE value="Ajout des fichiers" />
     <MESSAGE value="correction de bugs" />
     <MESSAGE value="mise à jour projet et carregando en français maintenant" />
-    <option name="LAST_COMMIT_MESSAGE" value="mise à jour projet et carregando en français maintenant" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Main/RpgLordOfRings/main.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Ajout du menu de création de personage" />
+    <MESSAGE value="Ajout du menu de création de personnage. Ajout des fonctions qui vérifient et valident les choix du joueur. Validation des points (si les point ont bien été distribués). Ajout des fonctions qui affichent plus d'information pour chaque attribut." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout du menu de création de personnage. Ajout des fonctions qui vérifient et valident les choix du joueur. Validation des points (si les point ont bien été distribués). Ajout des fonctions qui affichent plus d'information pour chaque attribut." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PenduGame$pendu_0opti_mauvais_fichier_de_mot.coverage" NAME="pendu_0opti_mauvais_fichier_de_mot Coverage Results" MODIFIED="1728724965384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main/AutresSolutions" />
@@ -385,6 +396,6 @@
     <SUITE FILE_PATH="coverage/DefisDiscord$pendu_game__1_.coverage" NAME="pendu_game (1) Coverage Results" MODIFIED="1728904987484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main/JeuDuPendu" />
     <SUITE FILE_PATH="coverage/PenduGame$SPOILER_message.coverage" NAME="SPOILER_message Coverage Results" MODIFIED="1728725488633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
     <SUITE FILE_PATH="coverage/DefisDiscord$SPOILER_message.coverage" NAME="SPOILER_message Coverage Results" MODIFIED="1728742619518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
-    <SUITE FILE_PATH="coverage/DefisDiscord$main.coverage" NAME="main Coverage Results" MODIFIED="1729262352910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main/RpgLordOfRings" />
+    <SUITE FILE_PATH="coverage/DefisDiscord$main.coverage" NAME="main Coverage Results" MODIFIED="1729341158241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main/RpgLordOfRings" />
   </component>
 </project>

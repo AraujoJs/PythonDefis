@@ -372,7 +372,8 @@ def get_menu_choice() -> str:
         show_menu_principal("A")
         game_name = str(input("Entrez le nom de votre partie:"))
         m.new_game(game_name)
-        utils.taper_text(f"Partie {game_name} créée avec succès!", True)
+        utils.taper_text(f"Partie {game_name} créée avec succès!\n", True)
+        print(get_menu_create_choice())
 
     elif choice == "B":
         show_menu_principal("B")

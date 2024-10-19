@@ -6,6 +6,9 @@ création: jojo, le 12 / 10 / 2024
 #Imports
 import logging, menu
 
+from Main.JeuDuPendu.pendu_game import games
+from Main.RpgLordOfRings.menu import get_menu_choice
+
 #Configurations globales
 logging.getLogger().setLevel(logging.DEBUG)
 
@@ -15,8 +18,10 @@ logging.getLogger().setLevel(logging.DEBUG)
 
 #Programme principal
 
-def start_game(game):
-	games =[range(5)]
+def start_game(game = None):
+	if game == None:
+		menu.show_menu_principal("P")
+		get_menu_choice()
 
 def new_game(name):
 	#TODO: créer nouveau game
@@ -31,10 +36,7 @@ def get_list_game()->list:
 
 
 def main():
-	menu.show_create_personnage()
-	print(f"name: {menu.get_menu_create_choice()}")
-	# menu.show_menu_principal()
-	# menu.get_menu_choice()
+	start_game()
 	pass
 
 
