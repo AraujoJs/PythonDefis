@@ -6,8 +6,6 @@ création: jojo, le 12 / 10 / 2024
 #Imports
 import logging, menu
 
-from Main.RpgLordOfRings.menu import show_create_personnage, get_menu_create_choice
-
 #Configurations globales
 logging.getLogger().setLevel(logging.DEBUG)
 
@@ -33,8 +31,8 @@ def get_list_game()->list:
 
 
 def main():
-	show_create_personnage()
-	print(f"name: {get_menu_create_choice()}")
+	menu.show_create_personnage()
+	print(f"name: {menu.get_menu_create_choice()}")
 	# menu.show_menu_principal()
 	# menu.get_menu_choice()
 	pass

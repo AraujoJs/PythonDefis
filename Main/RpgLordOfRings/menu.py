@@ -5,7 +5,6 @@ Création: jojo, le 12/10/2024
 """
 # Imports
 import logging, utils
-from os import PRIO_PGRP
 
 import main as m
 from Main.RpgLordOfRings.utils import taper_text
@@ -25,13 +24,238 @@ def show_create_personnage():
 =====================================
 """)
 
-def get_menu_create_choice():
+def get_valid_choice(type) -> str:
     races = {1: "Humain", 2: "Elfe", 3: "Nain", 4: "Hobbit"}
     classes = {1: "Guerrier", 2: "Mage", 3: "Archer", 4: "Clerc", 5: "Bard"}
-    points_balance = 20
+    temp = 0
+    if type == "race":
+        while temp not in races.keys():
+            taper_text("Choisissez: ")
+            temp = int(input())
+        return races[temp]
 
+    elif type == "class":
+        while temp not in classes.keys():
+            taper_text("Choisissez: ")
+            temp = int(input())
+        return classes[temp]
+
+def calc_points(balance, n_points) -> int:
+    if n_points == 10:
+        return balance
+    if n_points > 10:
+        balance -= 1
+    if n_points > 11:
+        balance -= 1
+    if n_points > 12:
+        balance -= 2
+    if n_points > 13:
+        balance -= 2
+    if n_points > 14:
+        balance -= 3
+    if n_points > 15:
+        balance -= 3
+    if n_points > 16:
+        balance -= 4
+    if 17 <= n_points <= 18:
+        balance -= 4
+    return balance
+def get_left_points(balance):
+    custs = [(11, 1), (13, 2), (15, 3), (17, 4)]
+    points = 10
+    for value, cust in custs:
+        if balance >= cust * 2:
+            points = value + 1
+            balance -= cust * 2
+        elif balance >= cust:
+            points = value
+            break
+        else:
+            break
+    return points
+
+def show_menu_info(att):
+    if att == "FOR":
+        print("""
+    - Force (FOR)
+    
+    La Force représente la puissance physique de votre personnage. 
+Elle détermine les dégâts infligés lors des attaques au corps à 
+corps et influence la capacité à porter des objets lourds ou à 
+effectuer des actions nécessitant de la force brute, comme briser 
+des portes ou soulever des charges.
+""")
+    if att == "DEX":
+        print("""
+    - Dextérité (DEX)
+    
+    La Dextérité mesure l'agilité, la précision et la vitesse de 
+votre personnage. Un personnage avec une haute Dextérité sera plus 
+précis lors des attaques à distance (comme les flèches ou les sorts)
+et aura une meilleure capacité à éviter les attaques ennemies. Cela 
+affecte également les compétences de furtivité et de manipulation 
+d'objets.)
+""")
+
+    if att == "INT":
+        print("""
+    - Intelligence (INT)
+    
+    L'Intelligence reflète la capacité de votre personnage à comprendre 
+et utiliser des connaissances, notamment dans le domaine de la magie. Un 
+personnage intelligent sera plus efficace dans l'utilisation des sorts, 
+la résolution d'énigmes et l'apprentissage de nouvelles compétences.
+""")
+    if att == "CON":
+        print("""
+    - Constitution (CON)
+    
+    La Constitution mesure la santé et la résistance physique de votre 
+personnage. Une haute Constitution augmente les points de vie (PV) de 
+votre personnage, améliorant sa survie en combat. Elle influence également
+la résistance aux maladies, poisons et effets néfastes.
+""")
+
+    if att == "CHA":
+        print("""
+    - Charisme (CHA)
+    
+    Le Charisme évalue l'aptitude de votre personnage à interagir avec les 
+autres. Un personnage charismatique sera plus convaincant lors de négociations, 
+aura de meilleures chances de persuader les PNJ (personnages non joueurs) 
+et pourra inspirer ou diriger d'autres personnages.
+""")
+    str(input("Tapez un caractère pour retourner: "))
+
+def get_perso_status(balance) -> dict:
+    status = {"FOR": 10, "DEX": 10, "INT": 10, "CON": 10, "CHA": 10}
+    print("""
+- Avoir un attribut à 10 ne coûte aucun point.
+- Attributs de 11 à 12 : Chaque point au-dessus de 10 coûte 1 point.
+- Attributs de 13 à 14 : Chaque point au-dessus de 12 coûte 2 points.
+- Attributs de 15 à 16 : Chaque point au-dessus de 14 coûte 3 points.
+- Attributs de 17 à 18 : Chaque point au-dessus de 16 coûte 4 points.
+(si à la fin il vous reste des points, il vous sera ajouté au dernier attribut)
+---------- Attributs:
+    - Force
+    - Dextérité
+    - Intélligence
+    - Constitution
+    - Charisme
+    
+    [i] pour plus d'information pour chaque attribut.
+--------------------------------------------------------------------------------
+""")
+
+
+    taper_text(f"\nDistribuez {balance} points entre les attributs suivants :\n")
+
+    # Vérifications des valeurs saisis (si c'est > 8 et inf au n de points max pos d'ajout avec la balance act
+    print(f"                                 Balance: {balance} points\n")
+    taper_text("Force [i]: ")
+    is_valid = False
+    while not is_valid:
+        c_for = input()
+        if c_for == "i":
+            show_menu_info("FOR")
+            taper_text("Force [i]: ")
+
+        else:
+            c_for = int(c_for)
+            is_valid = 10 <= c_for <= get_left_points(balance)
+            if not is_valid:
+                print("Tapez une valeur valide pour force: ", end="")
+            else:
+                new_balance = calc_points(balance, c_for)
+                balance = new_balance
+                status["FOR"] = c_for
+
+    print(f"                                 Balance: {balance} points\n")
+    taper_text("Dextérité [i]: ")
+    is_valid = False
+    while not is_valid:
+        c_dex = input()
+        if c_dex == "i":
+            show_menu_info("DEX")
+            taper_text("Dextérité [i]: ")
+        else:
+            c_dex = int(c_dex)
+            is_valid = 10 <= c_dex <= get_left_points(balance)
+            if not is_valid:
+                print("Tapez une valeur valide pour dextérité: ", end="")
+            else:
+                new_balance = calc_points(balance, c_dex)
+                balance = new_balance
+                status["DEX"] = c_dex
+
+    print(f"                                 Balance: {balance} points\n")
+    taper_text("Intélligence [i]: ")
+    is_valid = False
+    while not is_valid:
+        c_int = input()
+        if c_int == "i":
+            show_menu_info("INT")
+            taper_text("Intéligence [i]: ")
+        else:
+            c_int = int(c_int)
+            is_valid = 10 <= c_int <= get_left_points(balance)
+            if not is_valid:
+                print("Tapez une valeur valide pour intélligence: ", end="")
+            else:
+                new_balance = calc_points(balance, c_int)
+                balance = new_balance
+                status["INT"] = c_int
+
+    print(f"                                 Balance: {balance} points\n")
+    taper_text("Constituition [i]: ")
+    is_valid = False
+    while not is_valid:
+        c_con = input()
+        if c_con == "i":
+            show_menu_info("CON")
+            taper_text("Constituition [i]: ")
+        else:
+            c_con = int(c_con)
+            is_valid = 10 <= c_con <= get_left_points(balance)
+            if not is_valid:
+                print("Tapez une valeur valide pour constituition: ", end="")
+            else:
+                new_balance = calc_points(balance, c_con)
+                balance = new_balance
+                status["CON"] = c_con
+
+    print(f"                                 Balance: {balance} points\n")
+    taper_text("Charisme [i]: ")
+    is_valid = False
+    while not is_valid:
+        c_cha = input()
+        if c_cha == "i":
+            show_menu_info("CHA")
+            taper_text("Charisme [i]: ")
+        else:
+            c_cha = int(c_cha)
+            is_valid = 10 <= c_cha <= get_left_points(balance)
+            if not is_valid:
+                print("Tapez une valeur valide pour charisme: ", end="")
+            else:
+                new_balance = calc_points(balance, c_cha)
+                if new_balance != 0:
+                    print("Il vous sera ajouté les points restants automatiquement!")
+                    c_cha = get_left_points(balance)
+                    print(f"Il vous a été mis {c_cha} points pour charisme.")
+                    new_balance = calc_points(balance, c_cha)
+                balance = new_balance
+                status["CHA"] = c_cha
+
+    taper_text("votre personnage est prêt!", load=True)
+    return status
+
+def get_menu_create_choice():
+    points_balance = 20
+    perso = {"name": "", "race": "", "class": "", "status": {}}
     utils.taper_text("Entrez le nom de votre personnage: ")
-    name = str(input())
+    perso["name"] = str(input())
+
     utils.taper_text("Choisissez votre race : ")
     print("""\n
     1. Humain
@@ -39,8 +263,7 @@ def get_menu_create_choice():
     3. Nain
     4. Hobbit
 """)
-    utils.taper_text("Choisissez :")
-    c_race = int(input())
+    perso["race"] = get_valid_choice("race")
 
     utils.taper_text("Choisissez votre classe : ")
     print("""\n
@@ -50,28 +273,11 @@ def get_menu_create_choice():
     4. Clerc
     5. Bard
     """)
-    taper_text("Choisissez :")
-    choice = 0
-    while choice not in [1, 2, 3, 4, 5]:
-        choice = int(input())
-    c_classe = classes[choice]
+    perso["class"] = get_valid_choice("class")
 
-    print()
-    taper_text("Distribuez 20 points entre les attributs suivants :")
-    print()
-    taper_text("Force (par défaut 5) :")
-    c_force = int(input())
-    print()
-    taper_text("Agilité (par défault 5) :")
-    c_agilitee = int(input())
-    print()
-    taper_text("Intelligence (par défault 5 :")
-    taper_text("Défense (par défault 5 :")
-    c_defense = int(input())
+    perso["status"] = get_perso_status(points_balance)
 
-    taper_text("votre personnage est prêt!", load=True)
-
-    return [c_classe, c_force, c_agilitee, c_defense]
+    return perso
 
 
 def show_menu_principal(menu: str = "P"):
